@@ -1,0 +1,212 @@
+/*This is a css file that will be used to format how every page will look, thus, making the web site look consistent*/
+html {
+	background-color: #eee;
+}
+body {
+	margin-left: auto;
+    margin-right: auto;
+	background-color: #ddd;/*201D21*/
+	width: 1200px;
+	height: 100%;
+	box-shadow: 10px 10px 5px #444;
+}
+
+/*Header section*/
+header {
+	display: block;
+	width: 100%;
+	height: 275px;
+	background-color: #aaa;
+}
+
+#header1 {
+	margin: 10px;
+	float: left;
+	width: 250px;
+	height: 250px;
+}
+
+#header2 {
+	margin: 10px 25px 10px 25px;
+	float: left;
+	width: 587px;
+	height: 250px;
+}
+
+.header3 {
+	margin: 10px;
+	float: left;
+	width: 64px;
+	height: 64px;
+}
+
+.thetime p {
+	margin-right: 60px;
+	border-style: outset ;
+	background-color: #9D9B9E;
+	box-shadow: 5px 5px 3px #333;
+	display: block;
+	font-size: 14pt;
+	color: #111;
+	float: right;
+}
+
+header button {
+	margin: 25px 5px 0px 10px;
+}
+
+header input {
+	margin: 25px 5px 0px 0px;
+}
+/* Navigation section */
+nav {
+	background-color: #6c8391; /*1A6171*/
+	width: 100%;
+	text-align: center;
+}
+
+nav  ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 1px;
+}
+
+nav ul li {
+	display: inline;
+	margin-left: 25px;
+	margin-right: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+nav ul a {
+	text-decoration: none;
+	font-size: 24pt;
+	color: #515051; /*A3A2A3*/
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*Code referenced from http://www.w3schools.com/css/css_link.asp */ 
+nav ul a:visited {
+	text-decoration: none;
+	color: #515051;
+}
+
+nav ul a:hover {
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px 1px #333;
+	background-color: #bcaeaf; /*2F4E59*/
+	text-decoration: none;
+} 
+
+nav ul a:active {
+	text-decoration: none;
+	color: #515051;
+} 
+
+.info {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.info p {
+	text-align: center;
+	Color: #033030; /*1A6171*/
+	Font-family: League Gothic;
+	Font-size: 12pt;
+	text-align: justify;
+}
+
+
+.headers {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 1px 1px 3px 1px #333;
+	background-color: #9aa;
+	color: #494949; /*7E7E7E*/
+	Font-family: League Gothic;
+	Font-size: 18pt;
+	text-align: center;
+
+}
+
+/*the sponsor links*/
+#sponsors  {
+	margin: 5px;
+}
+
+#sponsors #sponsor1 {
+	display: inline;
+	margin-left: 35%;
+	margin-right: 5%;
+}
+
+#sponsors #sponsor2 {
+	display: inline;
+	margin-left: 0%;
+	margin-right: 5%;
+}
+
+#sponsors #sponsor3 {
+	display: inline;
+}
+
+/*The footer links*/
+footer {
+	background-color: #aaa;
+	height: 100%;
+
+}
+#sponsors {
+	width: 100%;
+	background-color: #aaa;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding-bottom: 50px;
+}
+
+.footlinks a {
+	display: inline;
+	text-decoration: none;
+	font-size: 12pt;
+	color: #333; /*A3A2A3*/
+	margin: 0px 0px 10px 10px;
+}
+
+.footlinks a:hover {
+	background-color: #4f6f7b;/*2F4E59*/
+	text-decoration: none;
+} 
+
+.footlinks #homepage {
+	display: inline;
+	margin-left: 22%;
+}
+
+.footlinks #homepage a:hover {
+	background-color: #2F4E59;
+	text-decoration: none;
+} 
+
+.footlinks #footerinfo {
+	display: inline;
+	text-align: right;
+	font-size: 12pt;
+	color: #333; /*A3A2A3*/
+	margin-left: 8%;
+}
+
+.html_validation_icon  {
+	display: inline;
+	margin-left: 20%;
+	margin-right: auto;
+}
+
+
+/* References:
+	CSS-Dimensions	http://www.w3schools.com/css/css_dimension.asp
+*/

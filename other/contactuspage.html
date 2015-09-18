@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<meta charset='utf-8'/>
+	
+	
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/contactuspageStyle.css">
+	<script type="text/javascript" src="js\currentTime.js"></script>
+	<script type="text/javascript" src="js\search_box.js"></script>
+	<script type="text/javascript" src="js\validator.js" type="text/javascript"></script>
+</head>
+
+<body onload="currentTime()" onload="searchbox()">
+
+	<div class="thetime">
+		<p>Current Time: <span id="timehere"></span></p>
+	</div>
+	
+	<header>
+		<a id="header1" href= "index.html"><img src="images/logo.png" width="250" height="250" alt="logo"></a>
+		<a id= "header2" href= "eventspage.html"><img src="images/next_event.png" width="600" height="250"alt="next events"></a>
+		<a class= "header3" href= "https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+		<a class= "header3" href= "https://www.youtube.com/"><img src="images/youtube.png" alt="YouTube"></a>
+		<a class= "header3" href= "https://twitter.com/?lang=en"><img src="images/twitter.png" alt="Twitter"></a>
+		<button onclick="searchbox()">Search</button>
+		<input id="newSearch" placeholder="search...">
+	</header>
+	
+	<nav>
+		<ul>
+			<li> <a href="eventspage.html"> EVENTS </a></li>
+			<li> <a href="gallerypage.html"> GALLERY </a></li>
+			<li> <a href="aboutuspage.html"> ABOUT US </a></li>
+			<li> <a id="contactusbutton" href="contactuspage.html"> CONTATC US </a></li>
+		</ul>
+	</nav>
+	
+<!--Contact us page starts here-->
+	<!--Validation form for new events and ideas-->
+	<!--Referenced from http://www.javascript-coder.com/html-form/javascript-form-validation.phtml#descriptors -->
+	<h2 class="headers">Registration For New Ideas and Projects (RSVP)</h2>
+	
+	<form action="" id="myform" >
+		<p>
+			<label for='FirstName'>First Name:</label>
+			<input type="text" id="FirstName" name="FirstName" />
+		</p>
+		<p>
+			<label for='LastName'>Last Name:</label>
+			<input type="text" id="LastName" name="LastName" />
+		</p>
+		<p>
+			<label for='EMail'>Email:</label>
+			<input type="text" id="Email" name="EMail" />
+		</p>
+		<p>
+			<label for='Phone'>Phone:</label>
+			<input type="text" id="Phone" name="Phone" />
+		</p>
+		<p>
+			<label for='Event'>Select Event:</label>
+			<select id="Event">
+				<option value="008">Weekly Event</option>
+				<option value="012">Monthly Event</option>
+			</select>
+		</p>
+		<p>
+			<input type="submit" name="submit" value="Submit">
+		</p>
+	</form>
+	
+	<script  type="text/javascript">
+		 var frmvalidator = new Validator("myform");
+		 frmvalidator.addValidation("FirstName","req","Please enter your First Name");
+		 frmvalidator.addValidation("FirstName","maxlen=20","Max length for FirstName is 20"); 
+		 frmvalidator.addValidation("LastName","req");
+		 frmvalidator.addValidation("LastName","maxlen=20");
+		 frmvalidator.addValidation("Email","maxlen=50");
+		 frmvalidator.addValidation("Email","req");
+		 frmvalidator.addValidation("Email","email");
+		 frmvalidator.addValidation("Phone","maxlen=50");
+		 frmvalidator.addValidation("Phone","numeric");
+	</script>
+	
+	
+	<!--Validation form for Feedback-->
+	<!--Referenced from http://www.javascript-coder.com/html-form/javascript-form-validation.phtml#descriptors -->
+	<h2 class="headers">We Appreciate Your Feedback</h2>
+	
+	<form action="" id="myform2" >
+		<p>
+			<label for='FirstName'>First Name:</label>
+			<input type="text" id="FirstName" name="FirstName" />
+		</p>
+		<p>
+			<label for='LastName'>Last Name:</label>
+			<input type="text" id="LastName" name="LastName" />
+		</p>
+		<p>
+			<label for='EMail'>Email:</label>
+			<input type="text" id="Email" name="EMail" />
+		</p>
+		<p>
+			<label for='Phone'>Phone:</label>
+			<input type="text" id="Phone" name="Phone" />
+		</p>
+		<p>
+			<label for='Address'>Feedback:</label>
+			<textarea cols="20" rows="5" id="Address"></textarea>
+		</p>
+		
+		<p>
+			<input type="submit" name="submit" value="Submit">
+		</p>
+	</form>
+	
+	<script type="text/javascript">
+		 var frmvalidator2 = new Validator("myform2");
+		 frmvalidator2.addValidation("FirstName","req","Please enter your First Name");
+		 frmvalidator2.addValidation("FirstName","maxlen=20","Max length for FirstName is 20"); 
+		 frmvalidator2.addValidation("LastName","req");
+		 frmvalidator2.addValidation("LastName","maxlen=20");
+		 frmvalidator2.addValidation("Email","maxlen=50");
+		 frmvalidator2.addValidation("Email","req");
+		 frmvalidator2.addValidation("Email","email");
+		 frmvalidator2.addValidation("Phone","maxlen=50");
+		 frmvalidator2.addValidation("Phone","numeric");
+		 frmvalidator2.addValidation("Address","maxlen=50");
+	</script>
+	
+	<h3 class="headers"> Contact Details</h3>
+	<p class="info">Walter White</p>
+	<p class="info">(07) 3033 1234</p>
+	<p class="info">wwhite@bunchofhackz.com</p>
+	<p class="info">Stanley Place, Cultural Centre, Southbank, Brisbane QLD 4101</p>
+<!--Contact us page ends here-->
+
+<!--sponsors section starts here-->	
+	<div id="sponsors">
+		<h2 class="headers"> Supported By:</h2>
+		<a id="sponsor1"href= "http://www.brisbane.qld.gov.au/"><img src="images/brisbane.png" alt="Brisbane" width="60" height="60"></a>
+		<a id="sponsor2" href= "http://edgeqld.org.au/"><img src="images/the_edge.png" alt="The_edge" width="120" height="60"></a>
+		<a id="sponsor3" href= "http://www.uq.edu.au/"><img src="images/uq.png" alt="The_University_of_Queensland" width="60" height="60"></a>
+	</div>
+</body>
+
+<!--The footer section-->
+<footer class="footlinks">
+			<a href="eventspage.html"> Events | </a>
+			<a href="https://www.google.com.au"> Gallery |</a>
+			<a href="https://www.google.com.au"> About Us |</a>
+			<a href="https://www.google.com.au"> Contact Us </a>
+			<a id="homepage" href="index.html">Homepage</a>
+			<p id="footerinfo">•Phone Number: 07 3033 1234 •E-mail: wwhite@bunchofhackz.com</p>
+			<img class="html_validation_icon" src="images/vcss.gif" alt="html_icon" width="64" height="25">
+			<img class="html_validation_icon" src="images/html.png" alt="html_icon" width="32" height="32">
+			<img class="html_validation_icon" src="images/vcss2.gif" alt="html_icon" width="64" height="25">
+</footer>
+
+</html>

@@ -1,0 +1,42 @@
+/*///////////////////////////////////////////////////////////////////
+//	-CSS document created by Izzy
+//  -Last edited by Felipe: 17/09/2015, 11:30am
+//
+//
+//
+////////////////////////////////////////////////////////////////////*/
+
+/*I just implemented this to make it look badass*/
+html {
+	background-color: #3B5E64;
+}
+
+/*where evrything goes*/
+body {
+	background-color: #D3D8D9;
+	width: 90%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+/*Headers Size & font*/
+h1 {
+	font-size: 50pt;
+	text-align: center;
+	font-family: Arial Black, Impact;
+}
+
+/*Feel free to edit this part, I actually wanted it to be on the middle*/
+form {
+	
+	padding: 10px;
+	margin-left: 35%;
+	margin-right: 30%;
+	margin-bottom: 40px;
+}
+
+img {
+	margin-left: 10%;
+	margin-right: 10%;
+}

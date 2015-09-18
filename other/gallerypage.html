@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<meta charset='utf-8'/>
+	
+	
+<head>
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/gallerypageStyle.css">
+	<script type="text/javascript" src="js\currentTime.js"></script>
+	<script type="text/javascript" src="js\search_box.js"></script>
+	<script type="text/javascript" src="js\galleryslideshow.js"></script>
+</head>
+
+<body onload="currentTime()" onload="searchbox()" >
+
+	<div class="thetime">
+		<p>Current Time: <span id="timehere"></span></p>
+	</div>
+	
+	<header>
+		<a id="header1" href= "index.html"><img src="images/logo.png" width="250" height="250" alt="logo"></a>
+		<a id= "header2" href= "eventspage.html"><img src="images/next_event.png" width="600" height="250"alt="next events"></a>
+		<a class= "header3" href= "https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+		<a class= "header3" href= "https://www.youtube.com/"><img src="images/youtube.png" alt="YouTube"></a>
+		<a class= "header3" href= "https://twitter.com/?lang=en"><img src="images/twitter.png" alt="Twitter"></a>
+		<button onclick="searchbox()">Search</button>
+		<input id="newSearch" placeholder="search...">
+	</header>
+	
+	<nav>
+		<ul>
+			<li> <a href="eventspage.html"> EVENTS </a></li>
+			<li> <a id="gallerybutton" href="gallerypage.html"> GALLERY </a></li>
+			<li> <a href="aboutuspage.html"> ABOUT US </a></li>
+			<li> <a href="contactuspage.html"> CONTATC US </a></li>
+		</ul>
+	</nav>
+	<!--Gallery page here-->
+	
+
+	<h2 class="headers"> Images</h2>
+	<table id ="imagestable"> 
+		<!--Images were to be able to select next image on slideshow-->
+		<tr> 
+			<td><img onclick="prev()" title="Previous" alt ="Prev" height="75px" width="40px"src="images/previous.png"/></td>
+			<td><img id="slide" alt ="my images" height="400" width="600" src="images/artpainting.jpg"/></td> 
+			<td><img onclick="next()" title="Next" alt ="Next" height="75px" width="40px" src="images/next.png"/></td>
+		</tr> 
+		
+		<tr> 
+			<td></td>
+			<td id="caption"> 
+				<div id ="mydiv"></div>
+			</td> 
+			<td></td>
+		</tr>  
+	</table>
+	
+	<!--Images gallery ends here-->
+	<div class="info">
+		<h2 class="headers">Projects</h2>
+		<h3 class="headers">Hackerspace Retroshare Backbone</h3>
+		<p>Retroshare offers a social network with file-sharing built-in, designed on a Friend to Friend routing model that allows long-range communication through relationships of mutual trust. It's a clever model, which allows more granular trust and sharing for advanced or obsessive users. It's also one of the friendliest and easiest open cryptographic applications available; once inside the network, adding new friends can be as simple as clicking on them in a map or chatroom.<br>
+		Retroshare allows a sort of email which only delivers when both nodes are online (synchronous), a more useful "forums" feature, explicitly shared or anonymously searched file-sharing, blog-like "channels" with optional auto-download of attached files from subscribed channels, real-time chat lobbies and direct group chat, and more using plugins. It's based on GnuPG and OpenSSL and is actively developed.
+		</p>
+		<h3 class="headers">ARTifacts: ACT Public Art</h3>
+		<p>ARTifacts uses data from the ACT Public Art List to provide Canberrans and visitors to the ACT with information about the ACT's vibrant selection of public art. It is designed primarily as an ambient display of local art for display screens dotted around Canberra and surrounds.<br>
+		The data is delivered as a web app, with the potential for the display to be customised for screens in different locations so that the entries displayed are weighted towards nearby art works. The focus is on a simple, elegant view of the artifacts together with information about where they are.
+</p>
+	</div>
+	<!--Gallery page ends here-->
+	
+<!--sponsors section starts here-->	
+	<div id="sponsors">
+		<h2 class="headers"> Supported By:</h2>
+		<a id="sponsor1"href= "http://www.brisbane.qld.gov.au/"><img src="images/brisbane.png" alt="Brisbane" width="60" height="60"></a>
+		<a id="sponsor2" href= "http://edgeqld.org.au/"><img src="images/the_edge.png" alt="The_edge" width="120" height="60"></a>
+		<a id="sponsor3" href= "http://www.uq.edu.au/"><img src="images/uq.png" alt="The_University_of_Queensland" width="60" height="60"></a>
+	</div>
+</body>
+
+<!--The footer section-->
+<footer class="footlinks">
+			<a href="eventspage.html"> Events | </a>
+			<a href="https://www.google.com.au"> Gallery |</a>
+			<a href="https://www.google.com.au"> About Us |</a>
+			<a href="https://www.google.com.au"> Contact Us </a>
+			<a id="homepage" href="index.html">Homepage</a>
+			<p id="footerinfo">•Phone Number: 07 3033 1234 •E-mail: wwhite@bunchofhackz.com</p>
+			<img class="html_validation_icon" src="images/vcss.gif" alt="html_icon" width="64" height="25">
+			<img class="html_validation_icon" src="images/html.png" alt="html_icon" width="32" height="32">
+			<img class="html_validation_icon" src="images/vcss2.gif" alt="html_icon" width="64" height="25">
+</footer>
+
+</html>

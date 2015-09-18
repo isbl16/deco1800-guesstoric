@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+	<meta charset='utf-8'/>
+	
+	<head>
+		<title>Homepage</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/homepageStyle.css">
+		<script type="text/javascript" src="js\currentTime.js"></script>
+		<script type="text/javascript" src="js\search_box.js"></script>
+		<script type="text/javascript" src="js\slideshow.js"></script>
+	</head>
+
+	<body onload="currentTime()" onload="searchbox()" onload="slideit()">
+
+		<div class="thetime">
+			<p>Current Time: <span id="timehere"></span></p>
+		</div>
+		
+		<header>
+			<a id="header1" href= "index.html"><img src="images/logo.png" width="250" height="250" alt="logo"></a>
+			<a id= "header2" href= "eventspage.html"><img src="images/next_event.png" width="600" height="250"alt="next events"></a>
+			<a class= "header3" href= "https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+			<a class= "header3" href= "https://www.youtube.com/"><img src="images/youtube.png" alt="YouTube"></a>
+			<a class= "header3" href= "https://twitter.com/?lang=en"><img src="images/twitter.png" alt="Twitter"></a>
+			<button onclick="searchbox()">Search</button>
+			<input id="newSearch" placeholder="search...">
+		</header>
+		
+		<nav>
+			<ul>
+				<li> <a href="eventspage.html"> EVENTS </a></li>
+				<li> <a href="gallerypage.html"> GALLERY </a></li>
+				<li> <a href="aboutuspage.html"> ABOUT US </a></li>
+				<li> <a href="contactuspage.html"> CONTATC US </a></li>
+			</ul>
+		</nav>
+		
+		<!-- video formatting referenced from http://www.w3schools.com/htmL/html_youtube.asp -->
+		<div id="video">
+			<h2 class="headers">
+				THE HACKERSPACE
+			</h2>
+			<iframe width="750" height="400" src="https://www.youtube.com/embed/wamwklXWK4M?autoplay=0"></iframe>
+		</div>
+		
+		<!-- Slideshow images -->
+		<div id= "slides">
+			<h2 class="headers">
+				SOME PROJECTS AND EVENTS
+			</h2>
+			<img src="images/meetup.jpg" alt="computers"  width="40%" height="368" />			
+		</div>
+		
+		<!-- useful information about web page -->
+		<div class="info">	
+			<h2 class="headers">
+				IMPORTANT INFORMATION
+			</h2>
+		
+			<p>
+				Bunch of Hackz is a community group that runs “hackerspace” events within Brisbane. A hackerspace occurs when a group of people with varying skills come together to quickly design and prototype cool little projects.
+				BoH (Bunch of Hackz) is focused on providing opportunities for those in Brisbane with an interest in programming, design, robotics and much more, to collaborate together, make new friends and develop their skills. We want people of any skill, whether they’re professionals or just starting this as a new hobby.
+			</p>
+			<!--Referenced information from http://makezine.com/2013/05/22/the-difference-between-hackerspaces-makerspaces-techshops-and-fablabs/ -->
+			<p>
+				The concept of a hackerspace started in Europe (anyone recognize the German linguistic construction?) as a collection of programmers (i.e., the traditional use of the term ‘hacker’) sharing a physical space. One of the first independent hackerspaces to open its doors was a German space known as c-base that opened in 1995; it currently boasts a membership of over 450 people, and is still active to this day. In August of 2007 (12 years after the European trend got started), a group of North American hackers visited Germany for Chaos Communication Camp, grew excited about the possibilities of having similar spaces in the United States, and came back to found NYC Resistor (2007), HacDC (2007), and Noisebridge (2008), to name a few. These spaces soon started adding electronic circuit design/manufacturing (directly related to their initial focus on programming) and physical prototyping to their lists of interests, and started expanding their offerings to include classes and access to tools via membership payments to pay the bills. Interestingly, the definition of the terms ‘hacking’ and ‘hacker’ started expanding to include working on physical objects as these spaces grew in popularity, and sought to differentiate themselves from the largely negative connotations of the term ‘hacking’ presented in the mainstream media. These spaces produced a couple of revolutionary businesses, including the well-known MakerBot Industries (born out of NYC Resistor), which is now in the process of dramatically changing the 3D printing industry.
+			</p>
+		</div>
+	<!--sponsors section starts here-->	
+		<div id="sponsors">
+			<h2 class="headers"> Supported By:</h2>
+			<a id="sponsor1"href= "http://www.brisbane.qld.gov.au/"><img src="images/brisbane.png" alt="Brisbane" width="60" height="60"></a>
+			<a id="sponsor2" href= "http://edgeqld.org.au/"><img src="images/the_edge.png" alt="The_edge" width="120" height="60"></a>
+			<a id="sponsor3" href= "http://www.uq.edu.au/"><img src="images/uq.png" alt="The_University_of_Queensland" width="60" height="60"></a>
+		</div>
+	</body>
+
+	<!--The footer section-->
+	<footer class="footlinks">
+			<a href="eventspage.html"> Events | </a>
+			<a href="https://www.google.com.au"> Gallery |</a>
+			<a href="https://www.google.com.au"> About Us |</a>
+			<a href="https://www.google.com.au"> Contact Us </a>
+			<a id="homepage" href="index.html">Homepage</a>
+			<p id="footerinfo">•Phone Number: 07 3033 1234 •E-mail: wwhite@bunchofhackz.com</p>
+			<img class="html_validation_icon" src="images/vcss.gif" alt="html_icon" width="64" height="25">
+			<img class="html_validation_icon" src="images/html.png" alt="html_icon" width="32" height="32">
+			<img class="html_validation_icon" src="images/vcss2.gif" alt="html_icon" width="64" height="25">
+	</footer>
+
+</html>

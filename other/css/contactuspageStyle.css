@@ -1,0 +1,33 @@
+#myform {
+	background-color: #f1c27d;
+	box-shadow: 3px 3px 5px 3px #333;
+	display: block;
+	width:50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#myform p, label, input{
+	margin: 5px;
+}
+
+#myform2 {
+	background-color: #e0ac69;
+	box-shadow: 3px 3px 5px 3px #333;
+	display: block;
+	width:50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#myform2 p, label, input{
+	margin: 5px;
+}
+
+#contactusbutton {
+	border-radius: 5px;
+	background-color: #bf8bff; /*1A6171*/
+	box-shadow: 0px 1px 1px 1px #333;
+	width: 100%;
+	text-align: center;
+}
